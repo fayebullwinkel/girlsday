@@ -1,152 +1,159 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Girls'Day 2026 – Meine erste Webseite</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f7f3ea;
-      color: #2b2b2b;
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Girls'Day 2026 – Meine erste Webseite</title>
+    <link rel="stylesheet" href="girlsday_2026_webvorlage_acker.css"/>
+    <style>
+        :root {
+            --cream: #f5efe2;
+            --sand: #eadfc8;
+            --white: #fffdf8;
+            --green: #7dbb5f;
+            --green-dark: #214c2f;
+            --green-soft: #e8f3df;
+            --yellow: #f2c94c;
+            --text: #26402f;
+            --shadow: 0 20px 40px rgba(33, 76, 47, 0.12);
+        }
 
-    header {
-      background: #7dbb5f;
-      color: white;
-      text-align: center;
-      padding: 32px 16px;
-    }
+        .topbar {
+            color: var(--green-dark);
+        }
 
-    main {
-      max-width: 900px;
-      margin: 24px auto;
-      background: white;
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
-    }
+        .brand span {
+            color: var(--green);
+        }
 
-    h1, h2 {
-      margin-top: 0;
-    }
+        h1 {
+            color: var(--green-dark);
+        }
 
-    .hero-image {
-      width: 100%;
-      max-width: 500px;
-      border-radius: 12px;
-      display: block;
-      margin: 16px auto;
-    }
+        .hero-card p {
+            color: var(--green-dark);
+        }
 
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
-      margin-top: 24px;
-    }
+        .mini-mascot {
+            background: linear-gradient(135deg, #7dbb5f 0%, #96cb78 100%);
+            color: white;
+        }
 
-    .card {
-      background: #eef7e8;
-      border-radius: 12px;
-      padding: 16px;
-    }
+        .fact-card {
+            background: var(--green-soft);
+        }
 
-    .challenge {
-      margin-top: 28px;
-      background: #fff8dc;
-      border-left: 6px solid #f0b429;
-      padding: 16px;
-      border-radius: 8px;
-    }
+        .fact-card strong {
+            color: var(--green-dark);
+        }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #666;
-      font-size: 14px;
-    }
+        .mission {
+            margin-top: 24px;
+            border-radius: 28px;
+            padding: 28px;
+        }
 
-    .highlight {
-      color: #2d7a39;
-      font-weight: bold;
-    }
-
-    ul {
-      line-height: 1.6;
-    }
-
-    .button-row {
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    .fake-button {
-      display: inline-block;
-      background: #2d7a39;
-      color: white;
-      padding: 12px 18px;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+        footer {
+            color: rgba(38, 64, 47, 0.78);
+            text-align: center;
+            padding: 28px 16px 16px;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Hallo, ich bin [DEIN NAME]</h1>
-    <p>Heute baue ich meine erste eigene Webseite 💻</p>
-  </header>
-
-  <main>
-    <h2>Über mich</h2>
-    <p>
-      Ich mag <span class="highlight">[DEIN HOBBY]</span> und mein Lieblingsessen ist
-      <span class="highlight">[DEIN LIEBLINGSESSEN]</span>.
-    </p>
-
-    <img
-      class="hero-image"
-      src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
-      alt="Menschen arbeiten gemeinsam an Laptops"
-    />
-
-    <h2>Meine Lieblingssachen</h2>
-    <div class="card-grid">
-      <div class="card">
-        <h3>🎵 Musik</h3>
-        <p>[Deine Lieblingsmusik oder Künstler*in]</p>
-      </div>
-      <div class="card">
-        <h3>🎮 Freizeit</h3>
-        <p>[Was machst du gern?]</p>
-      </div>
-      <div class="card">
-        <h3>🌈 Lieblingsfarbe</h3>
-        <p>[Deine Lieblingsfarbe]</p>
-      </div>
+<div class="page-shell">
+    <div class="topbar">
+        <div class="brand">Girls' Day 2026 bei <span>Acker</span></div>
     </div>
 
-    <div class="challenge">
-      <h2>Deine Mission</h2>
-      <ul>
-        <li>Ändere die Farben der Webseite.</li>
-        <li>Setze deinen Namen und deine Hobbys ein.</li>
-        <li>Tausche das Bild gegen eins aus, das dir gefällt.</li>
-        <li>Füge eine weitere Karte mit einer eigenen Idee hinzu.</li>
-        <li>Bonus: Erfinde eine neue Überschrift für deine Seite.</li>
-      </ul>
-    </div>
+    <header class="hero">
+        <div class="hero-copy">
+            <h1>Hallo, ich bin<br/>[DEIN NAME]</h1>
+            <p>
+                Heute gestalte ich meine eigene Webseite. Ich mag
+                <span class="highlight">[DEIN HOBBY]</span>, esse besonders gern
+                <span class="highlight">[DEIN LIEBLINGSESSEN]</span> und probiere aus,
+                wie man mit HTML und CSS eine schöne Webseite baut.
+            </p>
+        </div>
 
-    <div class="button-row">
-      <a href="#" class="fake-button">Das ist meine Webseite!</a>
-    </div>
-  </main>
+        <div class="hero-card">
+            <img src="images/GA_Moehre-lacht.gif" alt="Lachende Maxi-Moehre"/>
+            <p>Hier wächst deine erste Webseite!</p>
+        </div>
+    </header>
 
-  <footer>
-    Erstellt beim Girls'Day 2026 bei Acker e. V.
-  </footer>
+    <main>
+        <div class="content-grid">
+            <section class="panel intro-card">
+                <h2>Das bin ich</h2>
+                <p>
+                    Auf dieser Seite können alle sehen, was ich mag, was mich ausmacht und
+                    welche Ideen ich habe.
+                </p>
+                <p>
+                    Du kannst jeden Text in den eckigen Klammern
+                    austauschen und die Seite zu deiner ganz eigenen Version machen.
+                </p>
+
+                <div class="facts">
+                    <div class="fact-card">
+                        <strong>Musik</strong>
+                        <p>[Dein Lieblingslied oder Künstler*in]</p>
+                    </div>
+                    <div class="fact-card">
+                        <strong>Lieblingsfarbe</strong>
+                        <p>[Deine Lieblingsfarbe]</p>
+                    </div>
+                    <div class="fact-card">
+                        <strong>Superkraft</strong>
+                        <p>[Was ist deine (geheime) Superkraft?]</p>
+                    </div>
+                    <div class="fact-card">
+                        <strong>Traum für später</strong>
+                        <p>[Was möchtest du einmal ausprobieren oder lernen?]</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="side-stack">
+                <section class="panel mini-mascot">
+                    <img src="images/GA_Moehre_mitUtensilien_16.png" alt="Maxi mit Gartengeräten"/>
+                    <div>
+                        <h2>Mit Maxi macht's mehr Spass</h2>
+                        <p>
+                            Acker steht für Natur, Lernen und Ausprobieren. Genau das passt auch
+                            zu deiner ersten Webseite.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="panel">
+                    <h2>Meine Lebensweisheit</h2>
+                    <p>
+                        <span class="highlight">[DEIN MOTTO ODER LIEBLINGSSPRUCH]</span>
+                    </p>
+                    <img src="images/240423_Landingpage_Ackerappetit_Moehren_KL.png"/>
+                </section>
+            </div>
+        </div>
+
+        <section class="mission">
+            <h2>Deine Mission</h2>
+            <ul>
+                <li>Ändere Farben, Texte und Überschriften.</li>
+                <li>Setze deinen Namen, deine Hobbys und deine Ideen ein.</li>
+                <li>Tausche ein Maxi-Bild gegen ein anderes Bild aus dem "images"-Ordner.</li>
+                <li>Füge eine neue Karte bei "Das bin ich" hinzu.</li>
+                <li>Bonus: Füge einen Button in die Webseite ein.</li>
+            </ul>
+
+            <div class="button-row"></div>
+        </section>
+    </main>
+</div>
+
+<footer>Erstellt beim Girls'Day 2026 bei Acker e. V.</footer>
 </body>
 </html>
