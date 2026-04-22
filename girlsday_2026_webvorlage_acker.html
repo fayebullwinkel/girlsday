@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Girls'Day 2026 – Meine erste Webseite</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f3ea;
+      color: #2b2b2b;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #7dbb5f;
+      color: white;
+      text-align: center;
+      padding: 32px 16px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 24px auto;
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
+    .hero-image {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      display: block;
+      margin: 16px auto;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: #eef7e8;
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .challenge {
+      margin-top: 28px;
+      background: #fff8dc;
+      border-left: 6px solid #f0b429;
+      padding: 16px;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .highlight {
+      color: #2d7a39;
+      font-weight: bold;
+    }
+
+    ul {
+      line-height: 1.6;
+    }
+
+    .button-row {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .fake-button {
+      display: inline-block;
+      background: #2d7a39;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hallo, ich bin [DEIN NAME]</h1>
+    <p>Heute baue ich meine erste eigene Webseite 💻</p>
+  </header>
+
+  <main>
+    <h2>Über mich</h2>
+    <p>
+      Ich mag <span class="highlight">[DEIN HOBBY]</span> und mein Lieblingsessen ist
+      <span class="highlight">[DEIN LIEBLINGSESSEN]</span>.
+    </p>
+
+    <img
+      class="hero-image"
+      src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+      alt="Menschen arbeiten gemeinsam an Laptops"
+    />
+
+    <h2>Meine Lieblingssachen</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>🎵 Musik</h3>
+        <p>[Deine Lieblingsmusik oder Künstler*in]</p>
+      </div>
+      <div class="card">
+        <h3>🎮 Freizeit</h3>
+        <p>[Was machst du gern?]</p>
+      </div>
+      <div class="card">
+        <h3>🌈 Lieblingsfarbe</h3>
+        <p>[Deine Lieblingsfarbe]</p>
+      </div>
+    </div>
+
+    <div class="challenge">
+      <h2>Deine Mission</h2>
+      <ul>
+        <li>Ändere die Farben der Webseite.</li>
+        <li>Setze deinen Namen und deine Hobbys ein.</li>
+        <li>Tausche das Bild gegen eins aus, das dir gefällt.</li>
+        <li>Füge eine weitere Karte mit einer eigenen Idee hinzu.</li>
+        <li>Bonus: Erfinde eine neue Überschrift für deine Seite.</li>
+      </ul>
+    </div>
+
+    <div class="button-row">
+      <a href="#" class="fake-button">Das ist meine Webseite!</a>
+    </div>
+  </main>
+
+  <footer>
+    Erstellt beim Girls'Day 2026 bei Acker e. V.
+  </footer>
+</body>
+</html>
